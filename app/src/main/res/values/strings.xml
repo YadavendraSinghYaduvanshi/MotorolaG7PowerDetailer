@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Motorola Detailer</string>
+    <string name="action_sign_in" translatable="false">Login</string>
+    <string name="emp_id">Emp Id</string>
+    <string name="error_incorrect_empid">Employee Id is not correct</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
