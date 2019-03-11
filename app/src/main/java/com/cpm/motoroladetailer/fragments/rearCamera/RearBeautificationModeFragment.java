@@ -103,6 +103,7 @@ public class RearBeautificationModeFragment extends Fragment implements View.OnC
         this.leftMode = leftMode;
         this.rightMode = rightMode;
 
+
         btnHighResolutionImg.setImageResource(R.drawable.btn_beautification_mode_white);
         btnNormalImg.setImageResource(R.drawable.btn_normal_green);
         relative_layout_view.setBackgroundResource(normalImg);

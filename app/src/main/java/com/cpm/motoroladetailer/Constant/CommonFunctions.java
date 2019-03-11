@@ -41,15 +41,15 @@ public class CommonFunctions {
 
     public static void setVideoSize(FragmentActivity activity, VideoView videoView, int video) {
 
-//        DisplayMetrics metrics = new DisplayMetrics();
-//        activity.getWindowManager().getDefaultDisplay().getMetrics(metrics);
-//        android.widget.LinearLayout.LayoutParams params = (android.widget.LinearLayout.LayoutParams) videoView.getLayoutParams();
-//        params.width =  metrics.widthPixels;
-//        params.height = metrics.heightPixels;
-//        params.leftMargin = 0;
-//        videoView.setLayoutParams(params);
+        /*DisplayMetrics metrics = new DisplayMetrics();
+        activity.getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        android.widget.LinearLayout.LayoutParams params = (android.widget.LinearLayout.LayoutParams) videoView.getLayoutParams();
+        params.width =  metrics.widthPixels;
+        params.height = metrics.heightPixels;
+        params.leftMargin = 0;
+        videoView.setLayoutParams(params);*/
 
-        activity.getWindow().setFormat(PixelFormat.UNKNOWN);
+        //activity.getWindow().setFormat(PixelFormat.RGB_888);
         videoView.setVideoURI(Uri.parse("android.resource://" + "com.cpm.motoroladetailer" + "/" + video));
         MediaController mediaController = new
                 MediaController(activity);

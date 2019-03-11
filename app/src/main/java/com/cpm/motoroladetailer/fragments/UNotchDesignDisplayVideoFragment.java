@@ -38,9 +38,9 @@ public class UNotchDesignDisplayVideoFragment extends Fragment {
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                if(playVideo == 1) {
-                    next_btn.setVisibility(View.VISIBLE);
-                }
+//                if(playVideo == 1) {
+//                    next_btn.setVisibility(View.VISIBLE);
+//                }
                 flag = true;
             }
         });
@@ -48,27 +48,28 @@ public class UNotchDesignDisplayVideoFragment extends Fragment {
         videoView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                if(flag){
-                    if(playVideo == 1) {
-                        CommonFunctions.setVideoSize(getActivity(), videoView, R.raw.u_notch_display_starting_video);
-                    }else{
+                if(flag && !videoView.isPlaying()){
+                    flag = false;
+//                    if(playVideo == 1) {
+//                        CommonFunctions.setVideoSize(getActivity(), videoView, R.raw.u_notch_display_starting_video);
+//                    }else{
                         CommonFunctions.setVideoSize(getActivity(),videoView, R.raw.u_notch_display_design);
-                    }
-                    next_btn.setVisibility(View.GONE);
+                   // }
+                  //  next_btn.setVisibility(View.GONE);
                 }
                 return true;
             }
         });
 
-        next_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                playVideo=2;
-                next_btn.setVisibility(View.GONE);
-                CommonFunctions.setVideoSize(getActivity(),videoView, R.raw.u_notch_display_design);
-            }
-        });
+//        next_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                playVideo=2;
+//                next_btn.setVisibility(View.GONE);
+//                CommonFunctions.setVideoSize(getActivity(),videoView, R.raw.u_notch_display_design);
+//            }
+//        });
 
-        CommonFunctions.setVideoSize(getActivity(),videoView, R.raw.u_notch_display_starting_video);
+        CommonFunctions.setVideoSize(getActivity(),videoView, R.raw.u_notch_display_design);
     }
 }

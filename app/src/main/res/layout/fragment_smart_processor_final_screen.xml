@@ -12,18 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_left"
         android:weightSum="4">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.4"></LinearLayout>
+            android:layout_weight="2.8"></LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.2"
+            android:layout_weight="1.0"
             android:weightSum="5"
             android:orientation="horizontal">
 
@@ -35,16 +36,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/processor_img"/>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.2"
-            android:weightSum="5"
-            android:orientation="horizontal">
 
             <ImageView
                 android:layout_marginBottom="@dimen/margin_bottom"

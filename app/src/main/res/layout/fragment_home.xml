@@ -13,47 +13,37 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin_left"
         android:weightSum="4">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.4"></LinearLayout>
+            android:layout_weight="3.0"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1.2"
-            android:weightSum="5"
+            android:layout_weight="1.0"
+            android:weightSum="6"
             android:orientation="horizontal">
 
+            <ImageView
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:id="@+id/smart_camera_system"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/smart_camera_system"/>
 
             <ImageView
-                android:layout_marginBottom="@dimen/margin_bottom"
-                android:id="@+id/smart_camera_system"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/smart_camera_system"/>
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:id="@+id/super_fast_processor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/superfast_processor"/>
 
-            <ImageView
-                android:layout_marginBottom="@dimen/margin_bottom"
-                android:id="@+id/super_fast_processor"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/superfast_processor"/>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.2"
-            android:weightSum="5"
-            android:orientation="horizontal">
 
             <ImageView
                 android:layout_marginBottom="@dimen/margin_bottom"

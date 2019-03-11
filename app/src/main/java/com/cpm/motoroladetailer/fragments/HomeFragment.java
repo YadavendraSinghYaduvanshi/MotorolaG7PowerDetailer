@@ -80,7 +80,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                     val  = db.insertVisitCountData(visit_date,superFastProcessorCounter,2,emp_id);
                 }
                 if(val){
-                    loadFragment(new SuperFastProcessorVideoFargment(), true,"processor");
+                  //  loadFragment(new SuperFastProcessorVideoFargment(), true,"processor");
+                    loadFragment(new SmartProcessorFinalFragment(), true,"processor");
                 }
                 break;
 
