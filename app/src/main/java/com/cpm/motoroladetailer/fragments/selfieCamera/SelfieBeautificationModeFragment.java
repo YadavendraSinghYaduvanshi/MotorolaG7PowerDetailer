@@ -16,7 +16,7 @@ public class SelfieBeautificationModeFragment extends Fragment implements View.O
 
     ImageView btnLeftImg,btnRightImg,btnNormalImg,btnHighResolutionImg;
     RelativeLayout relative_layout_view;
-    final int set1=1,set2=2,set3=3;
+    final int set1=1,set2=2,set3=3,set4=4,set5=5;
     int currentset,normalImg,highResolutionImg,leftMode,rightMode,btn_normal,btn_green;
 
     @Override
@@ -82,11 +82,19 @@ public class SelfieBeautificationModeFragment extends Fragment implements View.O
                 break;
 
             case set2:
-                setCurrentMode(set2,R.drawable.portrait_mode_selfie_normal,R.drawable.portrait_mode_selfie,set1,set3,true,true, R.drawable.btn_portrait_green, R.drawable.btn_portrait_white);
+                setCurrentMode(set2,R.drawable.rear_beautification_mode_normal_off_img_set2,R.drawable.rear_beautification_mode_normal_on_img_set2,set1,set3,true,true,R.drawable.btn_beautification_mode_green,R.drawable.btn_beautification_mode_white);
                 break;
 
             case set3:
-                setCurrentMode(set3,R.drawable.group_selfie_normal,R.drawable.group_selfie,set2,0,true,false, R.drawable.group_selfie_green_btn, R.drawable.group_selfie_white_btn);
+                setCurrentMode(set3,R.drawable.rear_beautification_mode_normal_off_img_set3,R.drawable.rear_beautification_mode_normal_on_img_set3,set2,set4,true,true,R.drawable.btn_beautification_mode_green,R.drawable.btn_beautification_mode_white);
+                break;
+
+            case set4:
+                setCurrentMode(set4,R.drawable.portrait_mode_selfie,R.drawable.portrait_mode_selfie_normal,set3,set5,true,true, R.drawable.btn_portrait_green, R.drawable.btn_portrait_white);
+                break;
+
+            case set5:
+                setCurrentMode(set5,R.drawable.group_selfie_normal,R.drawable.group_selfie,set4,0,true,false, R.drawable.group_selfie_green_btn, R.drawable.group_selfie_white_btn);
                 break;
 
         }

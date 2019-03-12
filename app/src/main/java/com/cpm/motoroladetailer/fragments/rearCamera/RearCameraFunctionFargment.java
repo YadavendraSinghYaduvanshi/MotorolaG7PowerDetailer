@@ -32,14 +32,14 @@ public class RearCameraFunctionFargment extends Fragment implements View.OnClick
         portrait_mode_img = (ImageView)view.findViewById(R.id.portrait_mode);
 
         spot_color_img = (ImageView)view.findViewById(R.id.spot_color);
-        beautification_mode_img = (ImageView)view.findViewById(R.id.beautification_mode);
+      //  beautification_mode_img = (ImageView)view.findViewById(R.id.beautification_mode);
         cinemagraph_img = (ImageView)view.findViewById(R.id.cinemagraph);
 
         high_resolution_zoom_img.setOnClickListener(this);
         portrait_mode_img.setOnClickListener(this);
 
         spot_color_img.setOnClickListener(this);
-        beautification_mode_img.setOnClickListener(this);
+     //   beautification_mode_img.setOnClickListener(this);
         cinemagraph_img.setOnClickListener(this);
 
     }
@@ -64,10 +64,10 @@ public class RearCameraFunctionFargment extends Fragment implements View.OnClick
                 loadFragment(new RearSpotColorFragment());
                 break;
 
-            case R.id.beautification_mode:
-                // do your code
-                loadFragment(new RearBeautificationModeFragment());
-                break;
+//            case R.id.beautification_mode:
+//                // do your code
+//                loadFragment(new RearBeautificationModeFragment());
+//                break;
 
             case R.id.cinemagraph:
                 // do your code

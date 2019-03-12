@@ -52,13 +52,13 @@
                 android:src="@drawable/spot_color"/>
 
 
-            <ImageView
-                android:layout_marginBottom="@dimen/margin_bottom"
-                android:id="@+id/beautification_mode"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/beautification_mode"/>
+            <!--<ImageView-->
+                <!--android:layout_marginBottom="@dimen/margin_bottom"-->
+                <!--android:id="@+id/beautification_mode"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@drawable/beautification_mode"/>-->
 
             <ImageView
                 android:layout_marginBottom="@dimen/margin_bottom"

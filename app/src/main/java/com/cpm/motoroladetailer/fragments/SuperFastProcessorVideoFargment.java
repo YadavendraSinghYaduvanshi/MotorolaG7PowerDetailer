@@ -30,7 +30,7 @@ public class SuperFastProcessorVideoFargment extends Fragment {
     private void decalartion(View view) {
         videoView =
                 (VideoView) view.findViewById(R.id.video_view);
-        CommonFunctions.setVideoSize(getActivity(),videoView, R.raw.super_fast_processor);
+     //   CommonFunctions.setVideoSize(getActivity(),videoView, R.raw.super_fast_processor);
 
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
